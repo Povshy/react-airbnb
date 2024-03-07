@@ -25,3 +25,12 @@
     gap: 8px;
     font-size: 16px;
 }
+
+.comf--ok {
+    color: blue;
+}
+
+.comf--no {
+    color: #6c757d;
+    text-decoration: line-through;
+}

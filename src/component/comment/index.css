@@ -1,0 +1,38 @@
+.room__block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.room__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.com__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.com__info {
+    font-size: 14px;
+    color: rgb(49, 49, 203);
+}
+
+.com__price {
+    font-size: 16px;
+}
+
+.room__top {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}

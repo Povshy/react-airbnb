@@ -1,13 +1,23 @@
-.title {
+.block {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.title__text {
-    font-size: 56px;
-    font-weight: bold;
-    color: #000;
+.block__title {
+    display: flex;
+    gap: 16px;
+}
+
+.block__info {
+    font-size: 16px;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 40px;
 }
 
 .title__sub-block {

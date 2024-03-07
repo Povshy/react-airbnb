@@ -5,6 +5,12 @@ import Photo from "./component/photo";
 import Price from "./component/price";
 import RoomList from "./component/room-list";
 import Description from "./component/description";
+import Details from "./component/details";
+import Comfort from "./component/comfort";
+import Contact from "./component/contact";
+import Bonus from "./component/bonus";
+import Comments from "./component/comment";
+import Near from "./component/near";
 
 
 
@@ -177,7 +183,43 @@ function App() {
       />
       <RoomList list={data.roomTypes} />
       <Description title="Опис" children={data.description}/>
+      <Details 
+      guests = {data.property_details.guests}
+      bedrooms = {data.property_details.bedrooms}
+      beds = {data.property_details.bedrooms}
+      baths = {data.property_details.baths}
+      />
       <Description title="Про сусідів" children={data.neighborhood_info}/>
+      <Comfort 
+      pool = {data.amenities.hasPool}
+      gym = {data.amenities.hasGym}
+      breakfast = {data.amenities.hasFreeBreakfast}
+      wifi = {data.amenities.hasFreeWiFi}
+      parking = {data.amenities.hasParking}
+      pets = {data.amenities.hasPetsAllowed}
+      airport = {data.amenities.hasAirportShuttle}
+      concierge = {data.amenities.hasConciergeService}
+      roomServ = {data.amenities.hasRoomService}
+      child = {data.amenities.hasChildFriendly}
+      />
+      <Contact
+      name = {data.contact_info.name}
+      image = {data.contact_info.image}
+      rate = {data.contact_info.response_rate}
+      time = {data.contact_info.response_time}
+      info = {data.contact_info.info}
+      phone = {data.contact_info.phone}
+      />
+      <Bonus
+      rules = {data.additional_properties.house_rules}
+      policy = {data.additional_properties.cancellation_policy}
+      transport = {data.additional_properties.local_transportation}
+      languages = {data.additional_properties.host_languages}
+      offers = {data.additional_properties.special_offers}
+      />
+      <Comments list={data.guestReviews} />
+      <Near list={data.nearbyAttractions} />
+      
     </Page>
 
   );
